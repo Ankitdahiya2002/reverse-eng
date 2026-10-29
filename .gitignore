@@ -77,3 +77,26 @@ Thumbs.db
 website/_site/
 # Temporary translation output prepared before replacing the complete site.
 website/.i18n-*/
+
+# --- REA Target Isolation ---
+# Avoid uploading binaries you are analyzing
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.apk
+
+# Reverse Engineering Tool Projects & Decompiler Databases
+*.gpr
+*.rep/
+*.i64
+*.idb
+*.bndb
+
+# REA Agent Artifacts & Environment Builds
+.agents/local_cache/
+my-env/
+*.har
+*.saz
+
